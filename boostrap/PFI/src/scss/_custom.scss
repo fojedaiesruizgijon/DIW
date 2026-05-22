@@ -1,0 +1,36 @@
+@use 'base/vars' as v;
+@use 'sass:color';
+
+// Colores de Bootstrap
+$primary: v.$color-principal;
+$secondary: v.$color-secundario;
+$success: v.$color-verde-claro;
+$info: v.$color-terciario;
+$warning: v.$color-amarillo-claro;
+$danger: v.$color-rojo-claro;
+$light: v.$color-blanco;
+$dark: v.$color-negro;
+
+// Tipografía
+$font-family-base: v.$font-family-base;
+$headings-font-family: v.$font-family-header;
+
+$headings-font-weight: v.$font-weight-bold;
+$headings-color: v.$color-negro;
+$headings-margin-bottom: v.$spacing-md;
+
+// Body
+$body-bg: v.$color-blanco;
+$body-color: v.$color-negro;
+
+// Links
+$link-color: v.$color-principal;
+$link-decoration: none;
+$link-hover-color: v.$color-secundario;
+$link-hover-decoration: underline;
+
+// Navbar
+$nav-link-color: v.$color-blanco;
+$nav-link-hover-color: color.adjust(v.$color-blanco, $lightness: -20%);
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

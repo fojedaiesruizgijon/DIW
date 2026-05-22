@@ -1,0 +1,10 @@
+@use '../base/vars' as v;
+
+.opinions {
+    .avatar {
+        width: 100px;
+        height: 100px;
+        display: block;
+        object-fit: cover;
+    }
+} 

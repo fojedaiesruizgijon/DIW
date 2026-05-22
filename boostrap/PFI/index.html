@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Seguimiento de Antiguos Alumnos - IES Ruíz Gijón</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <link rel="icon" href="img/logo.png"> 
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="navbar bg-primary position-relative">
+        <div class="container d-flex flex-wrap justify-content-end py-1 mb-3 position-relative">
+            <div class="border-bottom border-white w-100 position-absolute bottom-0 d-none d-md-block"></div>
+            <div class="position-absolute logo-container">
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <img src="img/logo.png" alt="IES Ruíz Gijón" class="img-fluid">
+                </a>
+            </div>
+            
+            <!-- Navbar desktop -->
+            <ul class="nav nav-pills ms-auto d-none d-md-flex">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#caracteristicas" class="nav-link">Características</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#opiniones" class="nav-link">Opiniones</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#seguimiento" class="nav-link">Seguimiento</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#companies" class="nav-link">Empresas Colaboradoras</a>
+                </li>
+            </ul>
+            
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarMobile" aria-controls="navbarMobile" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list text-white"></i>
+            </button>
+        </div>
+
+        <div class="footer__divider">
+            <div class="footer__divider-animation"></div>
+        </div>
+        
+        <div class="container d-flex flex-wrap justify-content-end mb-3 d-none d-md-flex">
+            <a href="login.html" type="button" class="btn btn-outline-light me-2">Iniciar Sesión</a>
+            <a href="register.html" type="button" class="btn btn-light">Registrarse</a>
+        </div>
+        
+        <!-- Navbar móvil -->
+        <div class="collapse navbar-collapse" id="navbarMobile">
+            <div class="container py-2">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#caracteristicas" class="nav-link">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#opiniones" class="nav-link">Opiniones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#seguimiento" class="nav-link">Seguimiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#companies" class="nav-link">Empresas Colaboradoras</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex flex-column pt-3 my-3 border-top">
+                    <a href="login.html" class="btn btn-outline-light mb-2">Iniciar Sesión</a>
+                    <a href="register.html" class="btn btn-light">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero position-relative mb-5 overflow-hidden">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100" data-bs-interval="5000">
+                    <img src="img/carrusel_1.JPG" class="d-block w-100 h-100 object-fit-cover" alt="Slide 1">
+                </div>
+                <div class="carousel-item h-100" data-bs-interval="5000">
+                    <img src="img/carrusel_2.JPG" class="d-block w-100 h-100 object-fit-cover" alt="Slide 2">
+                </div>
+                <div class="carousel-item h-100" data-bs-interval="5000">
+                    <img src="img/carrusel_3.JPG" class="d-block w-100 h-100 object-fit-cover" alt="Slide 3">
+                </div>
+                <div class="carousel-item h-100" data-bs-interval="5000">
+                    <img src="img/carrusel_4.JPG" class="d-block w-100 h-100 object-fit-cover" alt="Slide 4">
+                </div>
+            </div>
+            <button class="carousel-control-prev opacity-75" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon fs-1" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next opacity-75" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon fs-1" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        
+        <div class="position-absolute w-100 h-100 bg-dark opacity-50 overlay"></div>
+        
+        <div class="container position-relative py-5 hero-content">
+            <div class="row min-vh-75 align-items-center text-center text-white my-3">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-5 fw-bold text-white">Conecta con tus antiguos alumnos</h1>
+                    <p class="lead mb-4">El IES Ruíz Gijón ha desarrollado una plataforma para monitorizar el éxito de nuestros egresados, obtener datos valiosos sobre inserción laboral y mantener una comunidad activa de antiguos alumnos.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="button" class="btn btn-primary btn-lg px-4 gap-3 border-0">Solicitar Demo</button>
+                        <button type="button" class="btn btn-light btn-lg px-4">Más Información</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <div class="features container py-5" id="caracteristicas">
+        <h1 class="text-center">Características</h1>
+    
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+            <div class="col features__card">
+                <div class="card card-cover h-100 text-white rounded-4 shadow-lg">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-briefcase display-1"></i>
+                        </div>
+                        <h3 class="pt-3 mb-4 display-6 lh-1 fw-bold text-white text-center">Busca Empleos</h3>
+                        <ul class="d-flex list-unstyled mt-auto justify-content-center">
+                            <li class="d-flex align-items-center me-3">
+                                <i class="bi bi-search me-2"></i>
+                                <small>Ofertas</small>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <i class="bi bi-building me-2"></i>
+                                <small>Empresas</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-geo-alt me-2"></i>
+                                <small>Ubicación</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col features__card">
+                <div class="card card-cover h-100 overflow-hidden text-white rounded-4 shadow-lg">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-graph-up-arrow display-1"></i>
+                        </div>
+                        <h3 class="pt-3 mb-4 display-6 lh-1 fw-bold text-white text-center">Estadísticas Laborales</h3>
+                        <ul class="d-flex list-unstyled mt-auto justify-content-center">
+                            <li class="d-flex align-items-center me-3">
+                                <i class="bi bi-bar-chart me-2"></i>
+                                <small>Análisis</small>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <i class="bi bi-mortarboard me-2"></i>
+                                <small>Egresados</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-currency-euro me-2"></i>
+                                <small>Salarios</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col features__card">
+                <div class="card card-cover h-100 text-dark rounded-4 shadow-lg">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-black">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-people display-1"></i>
+                        </div>
+                        <h3 class="pt-3 mb-4 display-6 lh-1 fw-bold text-center">Red de Contactos</h3>
+                        <ul class="d-flex list-unstyled mt-auto justify-content-center">
+                            <li class="d-flex align-items-center me-3">
+                                <i class="bi bi-person-plus me-2"></i>
+                                <small>Conexiones</small>
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <i class="bi bi-chat-dots me-2"></i>
+                                <small>Mensajes</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-calendar-event me-2"></i>
+                                <small>Eventos</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <!-- OPINIONS -->
+    <section class="container py-5 opinions" id="opiniones">
+        <h1 class="text-center mb-4">Lo que dicen nuestros antiguos alumnos</h1>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="img/opinion_1.jpg" alt="Opinión 1" class="rounded-circle mb-3 avatar mx-auto">
+                        <div class="text-warning mb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text mb-3">"Gracias a la plataforma de seguimiento del IES Ruíz Gijón he podido mantenerme conectada con mi centro y compañeros. Además, he encontrado oportunidades laborales a través de la red de contactos de antiguos alumnos."</p>
+                        <h5 class="card-title mb-1">Laura Martín</h5>
+                        <p class="text-muted small">Promoción 2018 - Ingeniería Informática</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="img/opinion_2.jpg" alt="Opinión 2" class="rounded-circle mb-3 avatar mx-auto">
+                        <div class="text-warning mb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <p class="card-text mb-3">"La plataforma del IES Ruíz Gijón me ha permitido compartir mi experiencia profesional con estudiantes actuales. He participado en eventos de mentorización que han sido muy enriquecedores."</p>
+                        <h5 class="card-title mb-1">Juan Pérez</h5>
+                        <p class="text-muted small">Promoción 2016 - FP en Administración</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="img/opinion_3.jpg" alt="Opinión 3" class="rounded-circle mb-3 avatar mx-auto">
+                        <div class="text-warning mb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text mb-3">"Como alumno internacional, el sistema de seguimiento del IES Ruíz Gijón me ha ayudado a mantener el contacto con mi centro educativo. Incluso he podido facilitar intercambios con mi actual universidad."</p>
+                        <h5 class="card-title mb-1">Marcelo García</h5>
+                        <p class="text-muted small">Promoción 2019 - Grado en Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEGUIMIENTO ALUMNADO -->
+    <section class="container py-5 bg-light seguimiento" id="seguimiento">
+        <h1 class="text-center mb-5">Monitorización de Antiguos Alumnos</h1>
+        
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <h2 class="fw-bold mb-4">Potencia el vínculo con tus egresados</h2>
+                <p class="lead mb-4">El IES Ruíz Gijón proporciona una plataforma integral que permite hacer un seguimiento efectivo del recorrido profesional de sus antiguos alumnos, obteniendo valiosa información para mejorar sus programas formativos.</p>
+                
+                <div class="row gy-4 mb-4">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-primary fs-4 me-3"></i>
+                            <p class="m-0">Encuestas automatizadas periódicas</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-primary fs-4 me-3"></i>
+                            <p class="m-0">Cuadros de mando analíticos</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-primary fs-4 me-3"></i>
+                            <p class="m-0">Mapeo de trayectorias profesionales</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-primary fs-4 me-3"></i>
+                            <p class="m-0">Repositorio CV actualizado</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn btn-primary btn-lg px-4">Solicitar Demostración</a>
+            </div>
+            
+            <div class="col-lg-6 mb-4 mb-lg-0 order-1 order-lg-2">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-4">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-mortarboard display-1 text-primary"></i>
+                        </div>
+                        <h3 class="card-title text-center mb-4">Impacto Demostrado</h3>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Aumento tasa respuesta egresados</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Mejora en adecuación formativa</span>
+                                <span>72%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Incremento convenios empresa</span>
+                                <span>91%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 91%" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Participación en actividades de antiguos alumnos</span>
+                                <span>63%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 63%" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <small class="text-muted">Datos basados en centros educativos que utilizan nuestra plataforma desde 2020</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-4 mt-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4 feature-icon">
+                            <i class="bi bi-calendar-event fs-1"></i>
+                        </div>
+                        <h4 class="card-title mb-3">Portal Alumnos</h4>
+                        <p class="card-text">Espacio digital personalizable donde egresados pueden registrarse, actualizar su información profesional y participar en la comunidad del centro.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4 feature-icon">
+                            <i class="bi bi-briefcase fs-1"></i>
+                        </div>
+                        <h4 class="card-title mb-3">Analítica Avanzada</h4>
+                        <p class="card-text">Paneles e informes de datos para medir empleabilidad, sectores profesionales, salarios y trayectorias de los antiguos alumnos.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center">
+                        <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-4 feature-icon">
+                            <i class="bi bi-people fs-1"></i>
+                        </div>
+                        <h4 class="card-title mb-3">Retroalimentación Formativa</h4>
+                        <p class="card-text">Sistema para obtener valoraciones de los egresados sobre la formación recibida y su aplicabilidad real en el entorno laboral.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPANIES -->
+    <section class="py-5" id="companies">
+        <h1 class="text-center mb-4">Empresas colaboradoras</h1>
+        
+        <div class="companies">
+            <div class="slider">
+                <div class="logos">
+                    <img src="img/company_1.png" alt="Indra">
+                    <img src="img/company_2.png" alt="Aertec">
+                    <img src="img/company_3.png" alt="Keedio">
+                    <img src="img/company_4.png" alt="Accenture">
+                    <img src="img/company_5.png" alt="Deloitte">
+                    <img src="img/company_6.png" alt="Ayesa">
+                    <img src="img/company_7.png" alt="Emergya">
+                </div>
+                <div class="logos">
+                    <img src="img/company_1.png" alt="Indra">
+                    <img src="img/company_2.png" alt="Aertec">
+                    <img src="img/company_3.png" alt="Keedio">
+                    <img src="img/company_4.png" alt="Accenture">
+                    <img src="img/company_5.png" alt="Deloitte">
+                    <img src="img/company_6.png" alt="Ayesa">
+                    <img src="img/company_7.png" alt="Emergya">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary text-light footer" id="footer">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 text-center text-md-start">
+                    <div class="mb-4 d-flex justify-content-center justify-content-md-start">
+                        <a href="https://ciclos.iesruizgijon.es/?redirect=0">
+                            <img src="img/logo.png" width="183" height="67" alt="IES Ruíz Gijón" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0 text-center text-md-start">
+                    <h4 class="text-light mb-3">Enlaces</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://iesruizgijon.com" class="text-white text-decoration-none">IES Ruiz Gijón</a></li>
+                        <li class="mb-2"><a href="https://www.juntadeandalucia.es/educacion/portalseneca/web/pasen/inicio" class="text-white text-decoration-none">PASEN</a></li>
+                        <li class="mb-2"><a href="http://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza" class="text-white text-decoration-none">FP Andalucía</a></li>
+                        <li class="mb-2"><a href="https://www.todofp.es/inicio.html" class="text-white text-decoration-none">TodoFP.es</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0 text-center text-md-start">
+                    <h4 class="text-light mb-3">Síganos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="https://es-es.facebook.com/iesruizgijon/" target="_blank" class="text-white text-decoration-none">
+                                <i class="bi bi-facebook me-2"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://twitter.com/IES_RuizGijon" target="_blank" class="text-white text-decoration-none">
+                                <i class="bi bi-twitter me-2"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0 text-center text-md-start">
+                    <address class="text-white mb-0">
+                        <p>C/ Paseo de Consolación, nº 1 - 41710 Utrera (Sevilla)</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>Teléfono: 95 583 95 73</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>
+                            E-mail: <a class="text-white" href="mailto:41007898.edu@juntadeandalucia.es">41007898.edu@juntadeandalucia.es</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <!-- Línea decorativa animada -->
+        <div class="position-relative overflow-hidden footer__divider">
+            <div class="footer__divider-animation"></div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="py-3 footer__copyright">
+            <div class="container text-center">
+                <p class="my-2 text-white">© 2025 <span class="fw-bold">IES RUIZ GIJÓN</span> - Todos los derechos reservados</p>
+                <p class="small text-white">Pagina realizada por José Antonio Segura Matute y Alejandro Arcos Bellido</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

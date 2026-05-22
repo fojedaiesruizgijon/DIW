@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+<head>
+    <title>Iniciar sesión</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body class="d-flex flex-column h-100">
+    <!-- HEADER -->
+    <header class="navbar bg-primary position-relative">
+        <div class="container d-flex flex-wrap justify-content-end py-1 mb-3 position-relative">
+            <div class="border-bottom border-white w-100 position-absolute bottom-0 d-none d-md-block"></div>
+            <div class="position-absolute logo-container">
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <img src="img/logo.png" alt="IES Ruíz Gijón" class="img-fluid">
+                </a>
+            </div>
+            
+            <!-- Navbar desktop -->
+            <ul class="nav nav-pills ms-auto d-none d-md-flex">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" aria-current="page">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#caracteristicas" class="nav-link">Características</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#opiniones" class="nav-link">Opiniones</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#seguimiento" class="nav-link">Seguimiento</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#companies" class="nav-link">Empresas Colaboradoras</a>
+                </li>
+            </ul>
+            
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarMobile" aria-controls="navbarMobile" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list text-white"></i>
+            </button>
+        </div>
+
+        <div class="footer__divider">
+            <div class="footer__divider-animation"></div>
+        </div>
+        
+        <div class="container d-flex flex-wrap justify-content-end mb-3 d-none d-md-flex">
+            <a href="register.html" type="button" class="btn btn-outline-light">Registrarse</a>
+        </div>
+        
+        <!-- Navbar móvil -->
+        <div class="collapse navbar-collapse" id="navbarMobile">
+            <div class="container py-2">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#caracteristicas" class="nav-link">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#opiniones" class="nav-link">Opiniones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#seguimiento" class="nav-link">Seguimiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#companies" class="nav-link">Empresas Colaboradoras</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex flex-column pt-3 my-3 border-top">
+                    <a href="register.html" class="btn btn-outline-light">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main d-flex flex-column justify-content-center flex-grow-1">
+        <div class="container py-3">                
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow">                   
+                        <div class="card-body bg-light py-4">
+                            <div class="bg-white mb-4">
+                                <h4 class="bg-primary text-center p-3 text-bg-secondary text-uppercase fw-light">Login</h4>
+                            </div>
+                            <form action="index.html" class="needs-validation" novalidate method="POST">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-light small">Email address</label>
+                                    <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+                                    <div class="valid-feedback">Campo válido</div>
+                                    <div class="invalid-feedback">Campo inválido</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label fw-light small">Password</label>
+                                    <input type="password" name="password" class="form-control" placeholder="Password" required>
+                                    <div class="valid-feedback">Campo válido</div>
+                                    <div class="invalid-feedback">Campo inválido</div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="remember">
+                                        <label class="form-check-label fw-light small" for="remember">Recordar</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 mb-2">
+                                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                                    <a href="index.html" class="btn btn-secondary">Entrar como invitado</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary text-light footer" id="footer">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 text-center text-md-start">
+                    <div class="mb-4 d-flex justify-content-center justify-content-md-start">
+                        <a href="https://ciclos.iesruizgijon.es/?redirect=0">
+                            <img src="img/logo.png" width="183" height="67" alt="IES Ruíz Gijón" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0 text-center text-md-start">
+                    <h4 class="text-light mb-3">Enlaces</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://iesruizgijon.com" class="text-white text-decoration-none">IES Ruiz Gijón</a></li>
+                        <li class="mb-2"><a href="https://www.juntadeandalucia.es/educacion/portalseneca/web/pasen/inicio" class="text-white text-decoration-none">PASEN</a></li>
+                        <li class="mb-2"><a href="http://www.juntadeandalucia.es/educacion/portals/web/formacion-profesional-andaluza" class="text-white text-decoration-none">FP Andalucía</a></li>
+                        <li class="mb-2"><a href="https://www.todofp.es/inicio.html" class="text-white text-decoration-none">TodoFP.es</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0 text-center text-md-start">
+                    <h4 class="text-light mb-3">Síganos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="https://es-es.facebook.com/iesruizgijon/" target="_blank" class="text-white text-decoration-none">
+                                <i class="bi bi-facebook me-2"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="https://twitter.com/IES_RuizGijon" target="_blank" class="text-white text-decoration-none">
+                                <i class="bi bi-twitter me-2"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0 text-center text-md-start">
+                    <address class="text-white mb-0">
+                        <p>C/ Paseo de Consolación, nº 1 - 41710 Utrera (Sevilla)</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i>Teléfono: 95 583 95 73</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i>
+                            E-mail: <a class="text-white" href="mailto:41007898.edu@juntadeandalucia.es">41007898.edu@juntadeandalucia.es</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <!-- Línea decorativa animada -->
+        <div class="position-relative overflow-hidden footer__divider">
+            <div class="footer__divider-animation"></div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="py-3 footer__copyright">
+            <div class="container text-center">
+                <p class="my-2 text-white">© 2025 <span class="fw-bold">IES RUIZ GIJÓN</span> - Todos los derechos reservados</p>
+                <p class="small text-white">Pagina realizada por José Antonio Segura Matute y Alejandro Arcos Bellido</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+        
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+        
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+            
+                form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@use '../base/vars' as v;
+
+.features {
+    &__card .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: v.$shadow-lg !important;
+            cursor: pointer;
+        }
+    }
+
+    &__card:nth-child(1) .card {
+        background-color: v.$color-rojo;
+    }
+
+    &__card:nth-child(2) .card {
+        background-color: v.$color-azul;
+    }
+
+    &__card:nth-child(3) .card {
+        background-color: v.$color-amarillo;
+        color: v.$color-negro;
+    }
+}

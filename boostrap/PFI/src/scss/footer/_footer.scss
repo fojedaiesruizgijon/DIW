@@ -1,0 +1,43 @@
+@use '../base/vars' as v;
+
+.footer {
+    &__divider {
+        position: relative;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.05);
+        overflow: hidden;
+        
+        &-animation {
+            position: absolute;
+            height: 100%;
+            width: 30%;
+            background: linear-gradient(90deg, transparent, v.$color-principal, v.$color-secundario, transparent);
+            animation: flow 3s infinite linear;
+        }
+    }
+    
+    &__copyright {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(200, 16, 46, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(200, 16, 46, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(200, 16, 46, 0);
+    }
+}
+
+@keyframes flow {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: 100%;
+    }
+}

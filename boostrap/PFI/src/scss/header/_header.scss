@@ -1,0 +1,58 @@
+@use '../base/vars' as v;
+
+.navbar {
+    padding: 0;
+    position: relative;
+
+    img {
+        height: 6rem;
+        
+        @media (max-width: calc(v.$medium - 1px)) {
+            height: 3rem;
+        }
+    }
+    
+    .logo-container {
+        left: 0;
+        top: 0;
+        background-color: v.$color-principal;
+    }
+    
+    .border-bottom {
+        height: 1px;
+        left: 0;
+        z-index: 0;
+    }
+    
+    .navbar-toggler {
+        border: 1px solid v.$color-blanco;
+        padding: 0.5rem 0.75rem;
+        margin-right: 0.5rem;
+        
+        .bi-list {
+            font-size: 1.5rem;
+            color: v.$color-blanco;
+        }
+    }
+    
+    #navbarMobile {
+        background-color: v.$color-principal;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        
+        .nav-link {
+            color: v.$color-blanco;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            
+            &:hover, &:focus {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            
+            &.active {
+                background-color: v.$color-blanco;
+                color: v.$color-principal;
+                font-weight: v.$font-weight-bold;
+            }
+        }
+    }
+}

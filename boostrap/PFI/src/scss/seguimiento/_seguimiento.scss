@@ -1,0 +1,12 @@
+@use '../base/vars' as v;
+
+.seguimiento {
+    .progress {
+        height: 10px;
+    }
+    
+    .feature-icon {
+        width: 80px;
+        height: 80px;
+    }
+} 

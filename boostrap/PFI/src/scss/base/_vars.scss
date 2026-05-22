@@ -1,0 +1,80 @@
+@use 'sass:color';
+
+//* Colores
+// Colores - modo claro
+$color-principal: #2B4E84;
+$color-secundario: #3e65a0;
+$color-terciario: #E8F0FB;
+$color-rojo-claro: #FFD3BD;
+$color-amarillo-claro: #FEE7AE;
+$color-verde-claro: #C8E6C9;
+
+// Otros colores
+$color-rojo: #dc3545;
+$color-azul: #0d6efd;
+$color-verde: #28a745;
+$color-amarillo: #ffc107;
+$color-gris: #d2d2d2;
+$color-blanco: #ffffff;
+$color-negro: #000000;
+
+//* Tipografía
+$font-family-base: 'Helvetica', sans-serif;
+$font-family-header: 'Inter', sans-serif;
+
+//* Tamaños de fuente
+$font-size-xs: 1.2rem;     
+$font-size-sm: 1.4rem;     
+$font-size-base: 1.6rem;   
+$font-size-md: 1.8rem;     
+$font-size-lg: 2.4rem;     
+$font-size-xl: 3.0rem;     
+$font-size-xxl: 3.6rem;    
+
+//* Pesos de fuente
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+//* Separación
+$separation: 3rem;
+
+//* Espaciado
+$spacing-xs: 0.4rem;       
+$spacing-sm: 0.8rem;       
+$spacing-md: 1.6rem;       
+$spacing-lg: 2.4rem;       
+$spacing-xl: 3.2rem;       
+
+// * Espaciado de letras
+$letter-spacing-sm: 0.3px;
+$letter-spacing-md: 0.5px;
+$letter-spacing-lg: 0.7px;
+
+// * Espaciado de palabras
+$word-spacing-sm: 0.3px;
+$word-spacing-md: 0.5px;
+$word-spacing-lg: 0.7px;
+
+//* Espaciado de líneas
+$line-height-sm: 1.2;
+$line-height-md: 1.5;
+$line-height-lg: 1.8;
+
+//* Media Queries
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px;
+
+//* Bordes
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.5rem;
+$border-radius-lg: 1rem;
+
+//* Sombras
+$shadow-sm: 0 0.125rem 0.25rem rgba($color-negro, 0.075);
+$shadow-md: 0 0.5rem 1rem rgba($color-negro, 0.15);
+$shadow-lg: 0 1rem 3rem rgba($color-negro, 0.175);

@@ -1,0 +1,38 @@
+{
+  "name": "proyecto-final-diw",
+  "version": "1.0.0",
+  "description": "Proyecto final DIW - Por José Antonio Segura Matute y Alejandro Arcos Bellido",
+  "main": "index.js",
+  "scripts": {
+    "compilar": "sass --watch --load-path=node_modules src/scss:build/css",
+    "build": "sass --load-path=node_modules src/scss:build/css && npm run purga && npm run copy-fonts",
+    "watch": "sass --watch --load-path=node_modules src/scss:build/css",
+    "purga": "purgecss --css build/css/styles.css --content *.html test.html --output build/css",
+    "copy-fonts": "copyfiles -f node_modules/bootstrap-icons/font/fonts/* build/fonts",
+    "clean": "powershell -Command \"if (Test-Path dist) { Remove-Item -Recurse -Force dist }\"",
+    "make-dist": "mkdir dist",
+    "copy-html": "xcopy /y *.html dist\\",
+    "copy-css": "xcopy /s /e /i /y build dist\\build",
+    "copy-images": "xcopy /s /e /i /y img dist\\img",
+    "setup-folders": "powershell -Command \"if (-not (Test-Path 'dist\\node_modules\\bootstrap-icons\\font\\fonts')) { New-Item -ItemType Directory -Force -Path 'dist\\node_modules\\bootstrap-icons\\font\\fonts' }\"",
+    "copy-icon-css": "xcopy /y node_modules\\bootstrap-icons\\font\\bootstrap-icons.css dist\\node_modules\\bootstrap-icons\\font\\",
+    "copy-icon-fonts": "xcopy /y node_modules\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff dist\\node_modules\\bootstrap-icons\\font\\fonts\\ && xcopy /y node_modules\\bootstrap-icons\\font\\fonts\\bootstrap-icons.woff2 dist\\node_modules\\bootstrap-icons\\font\\fonts\\",
+    "copy-node-modules": "npm run setup-folders && npm run copy-icon-css && npm run copy-icon-fonts",
+    "copy-js": "powershell -Command \"if (-not (Test-Path 'dist\\node_modules\\bootstrap\\dist\\js')) { New-Item -ItemType Directory -Force -Path 'dist\\node_modules\\bootstrap\\dist\\js' }\" && xcopy /y node_modules\\bootstrap\\dist\\js\\bootstrap.bundle.min.js dist\\node_modules\\bootstrap\\dist\\js\\",
+    "deploy": "npm run build && npm run clean && npm run make-dist && npm run copy-html && npm run copy-css && npm run copy-images && npm run copy-node-modules && npm run copy-js && npm run optimize",
+    "optimize": "npx html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true --input-dir dist --output-dir dist --file-ext html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^7.0.6",
+    "html-minifier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "purgecss": "^5.0.0",
+    "sass": "^1.85.1",
+    "uglify-js": "^3.19.3"
+  }
+}
